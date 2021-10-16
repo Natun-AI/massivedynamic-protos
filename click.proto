@@ -1,0 +1,25 @@
+syntax = "proto3";
+package massivedynamics;
+option go_package = "github.com/Natun-AI/massivedynamics/click";
+
+import "google/protobuf/timestamp.proto";
+
+message Click {
+  google.protobuf.Timestamp timestamp = 1;
+  google.protobuf.Timestamp client_timestamp = 2;
+  string remote_host = 3;
+  string referrer = 4;
+  string location = 5;
+  string user_agent = 6;
+  string clicked_object = 7;
+  string client_id = 8;
+}
+
+message Transaction {
+  google.protobuf.Timestamp timestamp = 1;
+  string client_id = 2;
+  float amount = 3;
+  repeated string items = 4;
+  string cc_number = 5;
+  string cc_expiry = 6;
+}
