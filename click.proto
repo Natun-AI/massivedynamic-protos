@@ -1,6 +1,6 @@
 syntax = "proto3";
-package massivedynamics;
-option go_package = "github.com/Natun-AI/massivedynamics/click";
+package massivedynamic;
+option go_package = "github.com/Natun-AI/massivedynamic/click";
 
 import "google/protobuf/timestamp.proto";
 
